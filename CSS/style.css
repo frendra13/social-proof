@@ -1,0 +1,212 @@
+:root {
+     --dkmagenta: hsl(300, 43%, 22%);
+     --sftpink: hsl(333, 80%, 67%);
+     --magenta: hsl(303, 10%, 53%);
+     --ltmagenta: hsl(300, 24%, 96%);
+     --white: hsl(0, 0%, 100%)
+}
+
+html {
+     font-size: 15px;
+     font-family: "spartan", sans-serif;
+}
+
+body {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+.title h1 {
+     margin: 5rem 1rem 1rem 1rem;
+     text-align: center;
+     font-size: 2.2rem;
+     font-weight: 700;
+     color: var(--dkmagenta);
+}
+
+.title p {
+     color: var(--magenta);
+     text-align: center;
+     margin: 1.2rem 1.2rem 1rem 1.2rem;
+     line-height: 1.7rem;
+     font-weight: 500;
+}
+
+.boxes {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+}
+
+.star {
+     margin-top: 1rem;
+}
+
+
+.box {
+     width: 90%;
+     background-color: var(--ltmagenta);
+     margin: .8rem 0;
+     color: var(--dkmagenta);
+     font-weight: 700;
+     border-radius: .7rem;
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+}
+
+.testi {
+     width: 90%;
+     background-color: var(--dkmagenta);
+     margin: auto;
+     border-radius: .7rem;
+     margin-bottom: 1rem;
+     margin-top: 2rem;
+}
+
+.head {
+     display: flex;
+}
+
+.head img {
+     margin: 1rem;
+     border-radius: 50%;
+     transform: scale(.7, .7);
+}
+
+.desc {
+     margin: 2rem .5rem 1rem .5rem;
+}
+
+.name {
+     margin-bottom: 0;
+     margin-top: .2rem;
+     color: var(--white);
+     font-weight: 700;
+}
+
+.status {
+     margin-top: .3rem;
+     color: var(--sftpink);
+     font-weight: 400;
+}
+
+.text {
+     color: var(--white);
+     font-size: .9rem;
+     margin: 0 2rem;
+     padding-bottom: 2rem;
+}
+
+.attribution {
+     font-size: 11px;
+     text-align: center;
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1440px) {
+     body {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          flex-grow: 1;
+     }
+
+     .info {
+          max-width: 1440px;
+          display: flex;
+          flex-direction: row;
+          flex-grow: 1;
+     }
+
+     .title {
+          width: 35%;
+          margin-left: 10rem;
+          margin-top: 3rem;
+     }
+
+     .title h1 {
+          margin-left: 0;
+          font-size: 3.3rem;
+          text-align: left;
+     }
+
+     .title p {
+          margin-left: 0;
+          text-align: left;
+     }
+
+     .boxes {
+          margin-top: 8.5rem;
+          margin-left: 3rem;
+          min-width: 35%;
+
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+          flex-direction: column;
+     }
+
+     .box {
+          flex-direction: row;
+     }
+
+     .box p {
+          margin: 1.5rem 1rem;
+     }
+
+     .star {
+          margin: 0;
+     }
+
+     .box.report {
+          margin-left: 3rem;
+     }
+
+     .bestech {
+          margin-left: 6rem;
+     }
+
+     .people {
+          max-width: 1440px;
+          margin-top: 3.5rem;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          flex-direction: row;
+     }
+
+     .head {
+          margin: 1rem
+     }
+
+     .testi {
+          max-width: 24rem;
+     }
+
+     .left {
+          margin: 0 0 0 8rem;
+     }
+
+     .mid {
+          margin: 1rem 1rem 0 1rem;
+     }
+
+     .right {
+          margin: 2rem 10rem 0 0;
+     }
+
+     .attribution {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+     }
+}
